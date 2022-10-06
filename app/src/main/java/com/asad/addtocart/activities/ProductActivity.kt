@@ -1,9 +1,12 @@
 package com.asad.addtocart.activities
 
+import android.app.AlertDialog
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -12,6 +15,7 @@ import com.asad.addtocart.R
 import com.asad.addtocart.adapters.ProductAdapter
 import com.asad.addtocart.database.Database
 import com.asad.addtocart.models.Product
+import com.google.firebase.auth.FirebaseAuth
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
@@ -23,6 +27,8 @@ class ProductActivity : AppCompatActivity() {
     var cartList: ArrayList<Product> = ArrayList()
     var cartLayout: FrameLayout? = null
     var tvCount: TextView? = null
+    var imgLogout: ImageView? = null
+    var mAuth: FirebaseAuth? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,9 +41,31 @@ class ProductActivity : AppCompatActivity() {
         database = Database(this)
         database?.createDatabase()
 
+        imgLogout = findViewById(R.id.imgLogout)
+        mAuth = FirebaseAuth.getInstance()
+
         cartLayout?.setOnClickListener {
             val intent = Intent(this, CartActivity::class.java)
             startActivity(intent)
+        }
+
+        imgLogout?.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("Empty cart and logout")
+                .setMessage("Are you sure you want perform this action?")
+                .setPositiveButton("Logout Anyway",
+                    DialogInterface.OnClickListener { dialog, which ->
+                        database?.clearTableData()
+                        mAuth?.signOut()
+                        val intent = Intent(this, LoginActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    })
+                .setNegativeButton("Close", DialogInterface.OnClickListener { dialog, which ->
+                    dialog.dismiss()
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show()
         }
 
         setCartCount()

@@ -144,6 +144,13 @@ class Database(activity: Context) {
         close()
     }
 
+    fun clearTableData() {
+        open()
+        val query = "delete from product"
+        sqLiteDatabase!!.execSQL(query)
+        close()
+    }
+
     fun isAdded(id: Int): Boolean {
         open()
         val query = "SELECT * FROM product WHERE productId = '$id'"
