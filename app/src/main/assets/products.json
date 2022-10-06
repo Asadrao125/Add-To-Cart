@@ -1,0 +1,125 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "price": "500",
+      "url": "https://via.placeholder.com/600/92c952"
+    },
+    {
+      "id": 2,
+      "title": "Product 2",
+      "price": "1200",
+      "url": "https://via.placeholder.com/600/771796"
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "price": "1500",
+      "url": "https://via.placeholder.com/600/24f355",
+      "thumbnailUrl": "https://via.placeholder.com/150/24f355"
+    },
+    {
+      "id": 4,
+      "title": "Product 4",
+      "price": "1300",
+      "url": "https://via.placeholder.com/600/d32776"
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "price": "800",
+      "url": "https://via.placeholder.com/600/f66b97"
+    },
+    {
+      "id": 6,
+      "title": "Product 6",
+      "price": "600",
+      "url": "https://via.placeholder.com/600/56a8c2"
+    },
+    {
+      "id": 7,
+      "title": "Product 7",
+      "price": "700",
+      "url": "https://via.placeholder.com/600/b0f7cc"
+    },
+    {
+      "id": 8,
+      "title": "Product 8",
+      "price": "800",
+      "url": "https://via.placeholder.com/600/54176f"
+    },
+    {
+      "id": 9,
+      "title": "Product 9",
+      "price": "900",
+      "url": "https://via.placeholder.com/600/51aa97"
+    },
+    {
+      "id": 10,
+      "title": "Product 10",
+      "price": "1000",
+      "url": "https://via.placeholder.com/600/810b14"
+    },
+    {
+      "id": 11,
+      "title": "Product 11",
+      "price": "1100",
+      "url": "https://via.placeholder.com/600/1ee8a4"
+    },
+    {
+      "id": 12,
+      "title": "Product 12",
+      "price": "1200",
+      "url": "https://via.placeholder.com/600/66b7d2"
+    },
+    {
+      "id": 13,
+      "title": "Product 13",
+      "price": "1300",
+      "url": "https://via.placeholder.com/600/197d29"
+    },
+    {
+      "id": 14,
+      "title": "Product 14",
+      "price": "1400",
+      "url": "https://via.placeholder.com/600/61a65"
+    },
+    {
+      "id": 15,
+      "title": "Product 15",
+      "price": "1500",
+      "url": "https://via.placeholder.com/600/f9cee5"
+    },
+    {
+      "id": 16,
+      "title": "Product 16",
+      "price": "1600",
+      "url": "https://via.placeholder.com/600/fdf73e"
+    },
+    {
+      "id": 17,
+      "title": "Product 17",
+      "price": "1700",
+      "url": "https://via.placeholder.com/600/9c184f"
+    },
+    {
+      "id": 18,
+      "title": "Product 18",
+      "price": "1800",
+      "url": "https://via.placeholder.com/600/1fe46f"
+    },
+    {
+      "id": 19,
+      "title": "Product 19",
+      "price": "1900",
+      "url": "https://via.placeholder.com/600/56acb2"
+    },
+    {
+      "id": 20,
+      "title": "Product 20",
+      "price": "2000",
+      "url": "https://via.placeholder.com/600/8985dc"
+    }
+  ]
+}
