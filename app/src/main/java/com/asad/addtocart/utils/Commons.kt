@@ -16,7 +16,5 @@ class Commons {
             Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
         }
     }
-
     /* AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES) */
-
 }
